@@ -11,5 +11,19 @@ namespace oop
         public int x;
         public int y;
         public char sym;
+
+        public point( _x, _y, _sym );
+    {
+        x = _x;
+        y = _y;
+        sym = _sym;
+    }
+
+
+        public void Draw();
+        {            
+            Console.SetCursorPosition(x, y);
+            Console.Write(sym);
+        }
     }
 }
